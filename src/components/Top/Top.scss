@@ -1,0 +1,65 @@
+.top{
+    background: white;
+    padding: 39px 0 89px;
+    
+    &-title{
+        padding-left: 100px;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        span{
+            font-family: MAB;
+            color: #149A03;
+            font-weight: 700;
+            font-size: 50px;
+            font-style: normal;
+        }
+    }
+    &-slider{
+        height: 463px;
+        padding-left: 100px;
+        margin-top: 40px;
+        @include media(576){
+            padding-left: 20px;
+        }
+        &-item{
+            border-radius: 10px;
+            position: relative;
+            &-content{
+                height: 100%;
+                max-width: none;
+                right: 0;
+                bottom: 0;
+                border-radius: 10px;
+                overflow: visible;
+                div:first-of-type{
+                    width: 80%;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    @include media(576){
+                        width: 100%;
+                    }
+                }
+                img{
+                    border-radius: 10px;
+                    width: 60%;
+                    right: 0;
+                }
+                div{
+                   span{
+                    font-size: 150px;
+                    font-style: italic;
+                    font-family: 'Montserrat';
+                    font-weight: 700;
+                    padding-left: 50px;
+                   }
+                }
+            }
+        }
+    }
+}
